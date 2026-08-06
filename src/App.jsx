@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Topbar, Footer } from './ui.jsx';
 import { Landing } from './screens/Landing.jsx';
 import { Catalog } from './screens/Catalog.jsx';
@@ -77,6 +78,8 @@ export default function App() {
         removeItem={removeItem}
         go={go}
       />
+
+      <Analytics />
     </div>
   );
 }
