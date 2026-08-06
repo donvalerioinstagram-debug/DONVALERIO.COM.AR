@@ -55,7 +55,7 @@ function Landing({ go, addToCart }) {
             </div>
             <button className="btn btn-ghost" onClick={() => go('catalog')}>Ver todo <Icon name="arrow" size={14}/></button>
           </div>
-          <div className="cat-grid" style={{gridTemplateColumns: 'repeat(3, 1fr)'}}>
+          <div className="cat-grid info-grid">
             {CATEGORIES.map(c => (
               <div key={c.id} className="cat-cell" onClick={() => go('catalog', { category: c.id })}>
                 <div className="num">{c.n} / {String(CATEGORIES.length).padStart(2,'0')}</div>
@@ -100,7 +100,7 @@ function Landing({ go, addToCart }) {
             Somos una empresa nueva en el mercado, con mas de 50 años de trayectoria familiar en el rubro, que garantizan una atención personalizada y de calidad.<br/><br/>
             Tenemos venta de productos nacionales e importados y además contamos con servicio post-venta con el propósito de mantener una excelente relación con nuestros clientes aun después de finalizada la compra.
           </p>
-          <div className="cat-grid" style={{gridTemplateColumns: 'repeat(3, 1fr)'}}>
+          <div className="cat-grid info-grid">
             <div className="cat-cell" style={{cursor: 'default'}}>
               <Icon name="truck" size={28} />
               <div>
@@ -134,7 +134,7 @@ function Landing({ go, addToCart }) {
               <h2>Hablemos de tu proyecto.</h2>
             </div>
           </div>
-          <div className="cat-grid" style={{gridTemplateColumns: 'repeat(3, 1fr)'}}>
+          <div className="cat-grid info-grid">
             <div className="cat-cell" style={{cursor: 'default'}}>
               <Icon name="phone" size={28} />
               <div>

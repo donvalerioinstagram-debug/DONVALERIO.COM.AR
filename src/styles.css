@@ -1946,3 +1946,51 @@ img, svg, video { max-width: 100%; height: auto; }
   object-fit: contain;
   mix-blend-mode: multiply;
 }
+
+/* ==========================================================
+   Bloques informativos (envío / garantía / contacto)
+   ========================================================== */
+.info-grid { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 900px) {
+  .info-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  /* Una tarjeta por fila: el texto deja de partirse letra por letra */
+  .info-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  /* Layout horizontal: ícono a la izquierda, texto a la derecha */
+  .info-grid .cat-cell {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 20px;
+    min-height: 0; /* el 320px de desktop dejaba un hueco enorme */
+  }
+  .info-grid .cat-cell > svg,
+  .info-grid .cat-cell > .icon { flex: 0 0 auto; margin-top: 2px; }
+
+  .info-grid .cat-cell > div { flex: 1; min-width: 0; }
+
+  /* El marginTop inline de 40px dejaba un hueco enorme */
+  .info-grid .cat-cell h3 {
+    margin-top: 0 !important;
+    font-size: 17px;
+    line-height: 1.25;
+  }
+  .info-grid .cat-cell .count {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 6px;
+  }
+
+  /* La flecha del bloque de WhatsApp, alineada a la derecha */
+  .info-grid .cat-cell .arrow {
+    flex: 0 0 auto;
+    align-self: center;
+    margin-left: auto;
+  }
+}
