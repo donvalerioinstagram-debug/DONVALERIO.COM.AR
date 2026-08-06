@@ -156,7 +156,7 @@ const PRODUCTS = [
   // ── HORNOS ─────────────────────────────────────────────────────────────────
   {
     sku: 'EB-4A', category: 'hornos', img: 'EB-4A',
-    name: 'Horno Convector Eléctrico 4 Bandejas', cap: '4 band. 440 × 320 mm',
+    name: 'Horno Convector EB-4A', cap: '4 band. 440 × 320 mm',
     desc: 'Horno convector eléctrico de 4 bandejas de gastronomía. Circulación de aire forzada para cocción pareja. Ideal para panaderías, rotiserías y cafeterías.',
     specs: [['Bandejas','4 de 440 × 320 mm'],['Tipo','Convector'],['Potencia','2,6 KW'],['Alimentación','220V / 50Hz monofásico'],['Dimensiones','595 × 530 × 570 mm'],['Peso','25 kg']],
     stock: 6,
