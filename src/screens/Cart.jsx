@@ -45,7 +45,7 @@ function CartDrawer({ open, close, cart, updateQty, removeItem, go }) {
           )}
           {items.map(i => (
             <div key={i.sku} className="line-item">
-              <div className="li-img" />
+              <div className="li-img"><img src={`/assets/products/${i.sku}.webp`} alt={i.name} loading="lazy"/></div>
               <div>
                 <div className="li-name">{i.name}</div>
                 <div className="li-sku">{i.sku} · {i.cap}</div>
@@ -116,7 +116,7 @@ function CartPage({ go, cart, updateQty, removeItem, clearCart }) {
         <div className="cart-items">
           {items.map(i => (
             <div key={i.sku} className="cart-row">
-              <div className="li-img" />
+              <div className="li-img"><img src={`/assets/products/${i.sku}.webp`} alt={i.name} loading="lazy"/></div>
               <div style={{flex: 1}}>
                 <div className="li-sku">{i.sku} · {CATEGORIES.find(c => c.id === i.category)?.label}</div>
                 <div style={{fontSize: 16, fontWeight: 600, marginTop: 4}}>{i.name}</div>
