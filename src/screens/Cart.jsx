@@ -33,7 +33,7 @@ function CartDrawer({ open, close, cart, updateQty, removeItem, go }) {
             <h3>Mi presupuesto</h3>
             <div style={{fontSize: 12, color: 'var(--ink-3)', marginTop: 2}}>{items.length} equipo{items.length !== 1 ? 's' : ''} en lista</div>
           </div>
-          <button className="close" onClick={close}><Icon name="x" size={20}/></button>
+          <button className="close" onClick={close} aria-label="Cerrar presupuesto"><Icon name="x" size={20}/></button>
         </div>
         <div className="drawer-body">
           {items.length === 0 && (

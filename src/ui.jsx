@@ -210,7 +210,7 @@ function CategoryCarousel({ categoryId }) {
   return (
     <div className="mini-carousel">
       {items.map((it, idx) => (
-        <img key={it.sku} className={idx === i ? 'active' : ''} src={`/assets/products/${it.img}.webp`} alt=""/>
+        <img key={it.sku} className={idx === i ? 'active' : ''} src={`/assets/products/${it.img}.webp`} alt={it.name || `Equipamiento ${it.sku} — Don Valerio`} loading="lazy"/>
       ))}
     </div>
   );
