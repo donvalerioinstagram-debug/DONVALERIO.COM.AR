@@ -6,5 +6,14 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=()
   Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; frame-ancestors 'self'
 
-/assets/*
+# JS y CSS llevan hash en el nombre: se pueden cachear para siempre
+/assets/*.js
   Cache-Control: public, max-age=31536000, immutable
+/assets/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# Las imágenes tienen nombre fijo: deben revalidarse para que los cambios se vean
+/assets/products/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/assets/fichas/*
+  Cache-Control: public, max-age=3600, must-revalidate

@@ -163,9 +163,9 @@ const PRODUCTS = [
   },
   {
     sku: 'EB-8A', category: 'hornos', img: 'EB-8A',
-    name: 'Horno Convector Eléctrico 8 Bandejas', cap: '8 band. 60 × 40 cm',
-    desc: 'Horno convector eléctrico de 8 bandejas. Mayor capacidad para producción continua. Circulación de aire uniforme y control de temperatura preciso.',
-    specs: [['Bandejas','8 de 60 × 40 cm'],['Potencia','6,4 KW'],['Alimentación','220V monofásico'],['Dimensiones','830 × 770 × 570 mm'],['Peso','40 kg']],
+    name: 'Horno Convector EB-8A', cap: '4 band. 600 × 400 mm',
+    desc: 'Horno convector eléctrico con capacidad para 4 bandejas de 600 × 400 mm. Solución práctica y eficiente para panaderías, pastelerías y emprendimientos gastronómicos. Frente vidriado, controles simples e ideal para producción diaria.',
+    specs: [['Bandejas','4 de 600 × 400 mm'],['Potencia','6,4 KW'],['Alimentación','220V / 50Hz monofásico'],['Dimensiones','830 × 770 × 570 mm'],['Peso','40 kg']],
     stock: 4,
   },
   {
