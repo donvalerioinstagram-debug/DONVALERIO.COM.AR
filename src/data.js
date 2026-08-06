@@ -1,7 +1,6 @@
 // ========= Data - Don Valerio Equipamientos — Junio 2026 =========
 
 const fmt = (n) => n.toLocaleString('es-AR', { maximumFractionDigits: 0 });
-const fmtARS = (n) => `$ ${fmt(n)}`;
 
 const CATEGORIES = [
   { id: 'batidoras',    n: '01', label: 'Batidoras Planetarias',   desc: 'Desde 7 hasta 60 litros' },
@@ -328,33 +327,15 @@ const PRODUCTS = [
   },
 ];
 
-const DEFAULT_CART = [];
-
-const PROVINCES = [
-  'Buenos Aires', 'CABA', 'Catamarca', 'Chaco', 'Chubut', 'Córdoba',
-  'Corrientes', 'Entre Ríos', 'Formosa', 'Jujuy', 'La Pampa', 'La Rioja',
-  'Mendoza', 'Misiones', 'Neuquén', 'Río Negro', 'Salta', 'San Juan',
-  'San Luis', 'Santa Cruz', 'Santa Fe', 'Santiago del Estero', 'Tierra del Fuego', 'Tucumán'
-];
-
-const BANK_INFO = {
-  banco: 'Banco Santa Fe',
-  titular: 'Don Valerio Equipamientos',
-  cuit: '30-71234567-4',
-  cbu: '3300550030004538291043',
-  alias: 'DON.VALERIO.PAN',
-};
-
 const BRAND = {
   name: 'Don Valerio',
   full: 'Don Valerio Equipamientos',
   tagline: 'Equipamiento profesional para panadería y gastronomía',
   address: 'Venezuela 1215 bis, Rosario — Santa Fe',
   phone: '+54 9 341 665-0190',
-  ivaNote: 'Precios sin IVA (10,5%)',
 };
 
 const FICHAS = ['B7-A','B15-V','B20-V','B30-V','B40-V','B60-V','BH-130','BHS-10-A','BHS-10-D','BHS-20-A','BHS-20-B','BHS-30-A','BHS-30-B','BHS-40-A','BHS-40-B','BHS-60-A','BHS-60-B','BHS-60-C','BSA-31','BDK-30S','DSL-2B','DSL-4B','DSL-6B','EB-4A','EB-8A','HL-R5D','HL-R10D','DBQ-520B','BDQ-650E','TRINCH-JR','TRINCH-CE','VSD-260D','YH-6','YH-16','YH-32'];
 
 
-export { fmt, fmtARS, CATEGORIES, PRODUCTS, DEFAULT_CART, PROVINCES, BANK_INFO, BRAND, FICHAS };
+export { CATEGORIES, PRODUCTS, BRAND, FICHAS };
