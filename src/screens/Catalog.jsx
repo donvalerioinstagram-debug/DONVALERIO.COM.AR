@@ -1,9 +1,18 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { CATEGORIES, PRODUCTS } from '../data.js';
 import { Breadcrumb, ProductCard } from '../ui.jsx';
 
 function Catalog({ go, addToCart, category }) {
   const [cat, setCat] = useState(category || 'all');
+
+  // Mantiene el filtro en sincronía con la URL (incluye botón atrás)
+  useEffect(() => { setCat(category || 'all'); }, [category]);
+
+  // Cambiar de categoría actualiza la URL, para que cada una sea enlazable
+  const pickCat = (id) => {
+    setCat(id);
+    go('catalog', id === 'all' ? {} : { category: id });
+  };
   const [sort, setSort] = useState('featured');
   const [volt, setVolt] = useState('all');
 
@@ -55,11 +64,11 @@ function Catalog({ go, addToCart, category }) {
         <aside className="filters">
           <div className="group">
             <h5>Categorías</h5>
-            <div className={`filter-item ${cat === 'all' ? 'active' : ''}`} onClick={() => setCat('all')}>
+            <div className={`filter-item ${cat === 'all' ? 'active' : ''}`} onClick={() => pickCat('all')}>
               <span>Todas</span><span className="c">{PRODUCTS.length}</span>
             </div>
             {CATEGORIES.map(c => (
-              <div key={c.id} className={`filter-item ${cat === c.id ? 'active' : ''}`} onClick={() => setCat(c.id)}>
+              <div key={c.id} className={`filter-item ${cat === c.id ? 'active' : ''}`} onClick={() => pickCat(c.id)}>
                 <span>{c.label}</span>
                 <span className="c">{PRODUCTS.filter(p => p.category === c.id).length}</span>
               </div>
@@ -97,7 +106,7 @@ function Catalog({ go, addToCart, category }) {
           {filtered.length === 0 ? (
             <div style={{padding: '64px 0', textAlign: 'center', color: 'var(--ink-3)'}}>
               <p style={{fontSize: 18, marginBottom: 12}}>Sin resultados para esa combinación.</p>
-              <button className="btn btn-outline btn-sm" onClick={() => { setCat('all'); setVolt('all'); }}>
+              <button className="btn btn-outline btn-sm" onClick={() => { pickCat('all'); setVolt('all'); }}>
                 Limpiar filtros
               </button>
             </div>
