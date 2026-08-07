@@ -89,7 +89,7 @@ export function metaFor(screen, props = {}) {
   };
   return {
     title: 'Equipamiento Gastronómico y de Panadería en Rosario | Don Valerio',
-    desc: 'Batidoras, amasadoras, hornos, sobadoras y cámaras de fermentación para panaderías, pastelerías y cocinas profesionales. 48 años equipando el rubro.',
+    desc: 'Batidoras, amasadoras, hornos, sobadoras y cámaras de fermentación para panaderías, pastelerías y cocinas profesionales. Más de 50 años de trayectoria familiar.',
   };
 }
 

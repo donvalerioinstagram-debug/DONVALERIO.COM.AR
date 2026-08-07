@@ -8,7 +8,7 @@ function Landing({ go, addToCart }) {
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <div className="hero-eyebrow">Rosario · Desde 1978</div>
+            <div className="hero-eyebrow">Rosario · Trayectoria familiar</div>
             <h1>Máquinas que <em>hornean</em> historias.</h1>
             <p className="hero-lede">
               Batidoras, amasadoras, hornos y cámaras de fermentación para panaderías,
@@ -27,7 +27,7 @@ function Landing({ go, addToCart }) {
               </button>
             </div>
             <div className="hero-stats">
-              <div className="stat"><div className="n">48 años</div><div className="l">Equipando panaderías</div></div>
+              <div className="stat"><div className="n">+50 años</div><div className="l">De trayectoria familiar</div></div>
               <div className="stat"><div className="n">2.800+</div><div className="l">Máquinas instaladas</div></div>
               <div className="stat"><div className="n">12 meses</div><div className="l">Garantía oficial</div></div>
             </div>
@@ -93,11 +93,11 @@ function Landing({ go, addToCart }) {
           <div className="section-head">
             <div>
               <div className="eyebrow">03 — Por qué Don Valerio</div>
-              <h2>Un servicio que amasa confianza desde 1978.</h2>
+              <h2>Un servicio que amasa confianza.</h2>
             </div>
           </div>
           <p style={{maxWidth: 720, color: 'var(--ink-2)', fontSize: 15, lineHeight: 1.7, marginBottom: 40}}>
-            Somos una empresa nueva en el mercado, con mas de 50 años de trayectoria familiar en el rubro, que garantizan una atención personalizada y de calidad.<br/><br/>
+            Somos una empresa familiar con más de 50 años de trayectoria en el rubro, que garantizan una atención personalizada y de calidad.<br/><br/>
             Tenemos venta de productos nacionales e importados y además contamos con servicio post-venta con el propósito de mantener una excelente relación con nuestros clientes aun después de finalizada la compra.
           </p>
           <div className="cat-grid info-grid">
