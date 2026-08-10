@@ -5,6 +5,7 @@ import { Catalog } from './screens/Catalog.jsx';
 import { Product } from './screens/Product.jsx';
 import { CartDrawer, CartPage } from './screens/Cart.jsx';
 import { parsePath, pathFor, applyMeta } from './router.js';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   // ---- Routing por URL real ----
@@ -99,6 +100,8 @@ export default function App() {
       </main>
 
       {showFooter && <Footer go={go} />}
+
+      <Analytics />
 
       <CartDrawer
         open={drawerOpen}
