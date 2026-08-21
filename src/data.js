@@ -229,52 +229,38 @@ const PRODUCTS = [
 
   // ── SOBADORAS ──────────────────────────────────────────────────────────────
   {
-    sku: 'DV-MB', slug: 'sobadora-de-mesa-dv-mb', category: 'sobadoras',
-    name: 'Sobadora de Mesa', cap: 'Motor 3/4 o 1 HP',
-    desc: 'Sobadora de mesa con motor de 3/4 o 1 HP. Compacta para talleres y panaderías artesanales. Fácil de instalar y operar.',
-    specs: [['Motor','3/4 HP o 1 HP'],['Dimensiones','50 × 67 × 78 cm']],
+    sku: 'DV-MB', slug: 'sobadora-de-mesa-dv-mb', category: 'sobadoras', img: 'DV-MB',
+    name: 'Sobadora de Mesa DV-MB', cap: 'Rolo 35 cm · 3/4 HP',
+    desc: 'Sobadora de mesa en acero inoxidable, compacta y robusta para panaderías, pastelerías, fábricas de pastas, gastronomía y emprendimientos que requieren laminado uniforme y constante. Funcionamiento silencioso con transmisión a engranajes, práctica y fácil de usar para el trabajo diario.',
+    specs: [['Ancho de rolo','35 cm'],['Apertura de rolo','0 a 1,4 cm'],['Potencia','3/4 HP'],['Alimentación','220V / 50Hz'],['Transmisión','A engranajes'],['Peso','30 kg'],['Dimensiones','50 × 67 × 78 cm']],
     stock: 5,
   },
   {
-    sku: 'DV-R', slug: 'sobadora-de-mesa-400-mm-dv-r', category: 'sobadoras',
-    name: 'Sobadora de Mesa 400 mm', cap: '400 mm · 0,9 HP',
-    desc: 'Sobadora de mesa con cilindros de 400 mm y motor de 0,9 HP monofásico. Diseño robusto para panaderías de mediana escala.',
-    specs: [['Cilindros','400 mm'],['Potencia','0,9 HP'],['Alimentación','220V monofásica']],
+    sku: 'DV-R', slug: 'sobadora-de-mesa-dv-r', category: 'sobadoras', img: 'DV-R',
+    name: 'Sobadora de Mesa DV-R', cap: 'Rodillos 400 mm · 1/3 HP',
+    desc: 'Sobadora de mesa construida íntegramente en acero inoxidable brillante, ideal para producciones artesanales y profesionales. Trabaja con 15 espesores diferentes; sus rodillos lisos de 400 mm con revestimiento antiadherente ABS y terminación rectificada garantizan un estirado uniforme y excelente deslizamiento. Calibración por leva excéntrica, transmisión por engranajes y correas.',
+    specs: [['Ancho de rodillos','400 mm'],['Apertura de rodillos','1 a 8 mm'],['Potencia','1/3 HP'],['Alimentación','220V / 50Hz'],['Transmisión','Engranajes y correas'],['Peso','21 kg aprox.'],['Dimensiones','52 × 37 × 35 cm']],
     stock: 4,
   },
   {
-    sku: 'SB-3HP', slug: 'sobadora-pastelera-3-hp-sb-3hp', category: 'sobadoras',
-    name: 'Sobadora Pastelera 3 HP', cap: '3 HP · 600 mm',
-    desc: 'Sobadora pastelera con cilindros de 600 mm y motor de 3 HP trifásico. Para pastelerías y panaderías con producción sostenida de masas laminadas.',
-    specs: [['Cilindros','600 mm'],['Potencia','3 HP'],['Alimentación','380V trifásica']],
+    sku: 'SB-3HP', slug: 'sobadora-pesada-3-hp', category: 'sobadoras', img: 'SB-3HP',
+    name: 'Sobadora Pesada 3 HP', cap: 'Cilindros 600 × 140 mm · 3 HP',
+    desc: 'Sobadora pesada en acero inoxidable para panaderías, pastelerías y fábricas de pastas con trabajo continuo y estirado uniforme de masa. Cilindros de 600 mm de ancho y 140 mm de diámetro, tablas revestidas en acero inoxidable. Incorpora triple sistema de seguridad: parada de emergencia de cintura o rodilla, pulsador tipo golpe de puño y tercer rolo de seguridad.',
+    specs: [['Cilindros','600 × 140 mm'],['Potencia','3 HP'],['Alimentación','380V / 50Hz'],['Motor opcional','220V / 50Hz'],['Tablas','Revestidas en acero inoxidable'],['Seguridad','Parada de emergencia y tercer rolo'],['Peso','275 kg'],['Dimensiones','1100 × 1140 × 1440 mm']],
     stock: 3,
   },
   {
-    sku: 'SB-4HP', slug: 'sobadora-pesada-4-hp-sb-4hp', category: 'sobadoras',
-    name: 'Sobadora Pesada 4 HP', cap: '4 HP · 600 mm',
-    desc: 'Sobadora pesada con cilindros de 600 mm y motor de 4 HP trifásico. Estructura reforzada para trabajo intensivo con masas duras.',
-    specs: [['Cilindros','600 mm'],['Potencia','4 HP'],['Alimentación','380V trifásica']],
+    sku: 'SB-5.5HP', slug: 'sobadora-pesada-5-5-hp', category: 'sobadoras', img: 'SB-5.5HP',
+    name: 'Sobadora Pesada 5,5 HP', cap: 'Cilindros 600 × 170 mm · 5,5 HP',
+    desc: 'Sobadora pesada reforzada en acero inoxidable, diseñada para trabajos intensivos de sobado y laminado. Cilindros de gran porte de 600 mm de ancho y 170 mm de diámetro, transmisión mediante cadenas y piñones de 5/8" vinculados a eje con chaveta de 10 mm. Doble parada de emergencia y tercer rolo de protección de serie.',
+    specs: [['Ancho de cilindros','600 mm'],['Diámetro de cilindros','170 mm'],['Potencia','5,5 HP'],['Alimentación','380V / 50Hz'],['Transmisión','Cadenas y piñones 5/8"'],['Tablas','Revestidas en acero inoxidable'],['Seguridad','Doble parada de emergencia y tercer rolo'],['Peso','450 kg'],['Dimensiones','1100 × 1145 × 1450 mm']],
     stock: 2,
   },
   {
-    sku: 'SB-5.5HP', slug: 'sobadora-pesada-reforzada-5-5-hp-sb-5-5hp', category: 'sobadoras',
-    name: 'Sobadora Pesada Reforzada 5,5 HP', cap: '5,5 HP · 600 mm',
-    desc: 'Sobadora pesada reforzada con motor de 5,5 HP trifásico. Cilindros de 600 mm para el trabajo más exigente en panaderías industriales.',
-    specs: [['Cilindros','600 mm'],['Potencia','5,5 HP'],['Alimentación','380V trifásica']],
-    stock: 2,
-  },
-  {
-    sku: 'SB-5.5HP-DT', slug: 'sobadora-pesada-doble-transmision-sb-5-5hp-dt', category: 'sobadoras',
-    name: 'Sobadora Pesada Doble Transmisión', cap: '5,5 HP · doble transmisión',
-    desc: 'Sobadora pesada reforzada con doble transmisión y cilindros de acero inoxidable. 5,5 HP trifásico. Máxima durabilidad y rendimiento.',
-    specs: [['Cilindros','600 mm · acero inox'],['Transmisión','Doble'],['Potencia','5,5 HP'],['Alimentación','380V trifásica']],
-    stock: 1,
-  },
-  {
-    sku: 'SB-5.5HP-IX', slug: 'sobadora-pesada-acero-inox-sb-5-5hp-ix', category: 'sobadoras',
-    name: 'Sobadora Pesada Acero Inox', cap: '5,5 HP · inox',
-    desc: 'Sobadora pesada reforzada con cilindros de acero inoxidable de 600 mm. Ideal para elaboración de productos para celíacos y panificados especiales.',
-    specs: [['Cilindros','600 mm · acero inox'],['Potencia','5,5 HP'],['Alimentación','380V trifásica']],
+    sku: 'SB-5.5HP-DT', slug: 'sobadora-pesada-doble-transmision-5-5-hp', category: 'sobadoras', img: 'SB-5.5HP-DT',
+    name: 'Sobadora Pesada Doble Transmisión 5,5 HP', cap: 'Cilindros 600 × 170 mm · doble transmisión',
+    desc: 'Sobadora pesada reforzada con doble transmisión, en acero inoxidable, para el trabajo más intensivo de sobado y laminado. Cilindros de 600 mm de ancho y 170 mm de diámetro, con transmisión mediante cadenas y piñones dobles de 5/8" vinculados a eje con chaveta de 10 mm para mayor durabilidad. Doble parada de emergencia y tercer rolo de protección de serie.',
+    specs: [['Ancho de cilindros','600 mm'],['Diámetro de cilindros','170 mm'],['Potencia','5,5 HP'],['Alimentación','380V / 50Hz'],['Transmisión','Cadenas y piñones dobles 5/8"'],['Tablas','Revestidas en acero inoxidable'],['Seguridad','Doble parada de emergencia y tercer rolo'],['Peso','450 kg'],['Dimensiones','1100 × 1145 × 1450 mm']],
     stock: 1,
   },
 
@@ -335,7 +321,7 @@ const BRAND = {
   phone: '+54 9 341 665-0190',
 };
 
-const FICHAS = ['B7-A','B15-V','B20-V','B30-V','B40-V','B60-V','BH-130','BHS-10-A','BHS-10-D','BHS-20-A','BHS-20-B','BHS-30-A','BHS-30-B','BHS-40-A','BHS-40-B','BHS-60-A','BHS-60-B','BHS-60-C','BSA-31','BDK-30S','DSL-2B','DSL-4B','DSL-6B','EB-4A','EB-8A','HL-R5D','HL-R10D','DBQ-520B','BDQ-650E','TRINCH-JR','TRINCH-CE','VSD-260D','YH-6','YH-16','YH-32'];
+const FICHAS = ['DV-MB','DV-R','SB-3HP','SB-5.5HP','SB-5.5HP-DT','B7-A','B15-V','B20-V','B30-V','B40-V','B60-V','BH-130','BHS-10-A','BHS-10-D','BHS-20-A','BHS-20-B','BHS-30-A','BHS-30-B','BHS-40-A','BHS-40-B','BHS-60-A','BHS-60-B','BHS-60-C','BSA-31','BDK-30S','DSL-2B','DSL-4B','DSL-6B','EB-4A','EB-8A','HL-R5D','HL-R10D','DBQ-520B','BDQ-650E','TRINCH-JR','TRINCH-CE','VSD-260D','YH-6','YH-16','YH-32'];
 
 
 export { CATEGORIES, PRODUCTS, BRAND, FICHAS };
