@@ -274,9 +274,9 @@ const PRODUCTS = [
   },
   {
     sku: 'TRINCH-JR', slug: 'trinchadora-jr-trinch-jr', category: 'trinchadoras', img: 'TRINCH-JR',
-    name: 'Trinchadora JR', cap: '3 conformadores',
-    desc: 'Trinchadora JR con 3 conformadores de aluminio fundido intercambiables. Sistema de armado por filtros giratorios, 3 a 4 vueltas y rodamientos blindados para larga vida útil.',
-    specs: [['Producción harina','5 bolsas/hora'],['Producción pan','350 kg/hora'],['Rango de piezas','30 – 350 g'],['Conformadores','3 de aluminio fundido intercambiables'],['Sistema','Filtros giratorios'],['Vueltas','3 a 4'],['Rodamientos','Blindados'],['Motor','1 HP'],['Tensión','220V (TJRM) o 380V (TJRT)'],['Dimensiones','570 × 1330 × 1140 mm'],['Peso','115 kg']],
+    name: 'Trinchadora JR', cap: 'Moldes 3-6-8 · 1 HP',
+    desc: 'Trinchadora armadora TJRM / TJRT, solución versátil para líneas de panificación que requieren armado continuo y formatos variados. Permite trabajar piezas desde 100 g hasta 650 g, adaptándose a diferentes producciones con moldes intercambiables 3-6-8. Equipada con motor de 1 HP trifásico, ofrece una capacidad de producción de hasta 7 bolsas por hora.',
+    specs: [['Producción de harina','7 bolsas/hora'],['Rango de armado','100 a 650 g'],['Moldes intercambiables','3 – 6 – 8'],['Motor','1 HP'],['Alimentación','Trifásico']],
     stock: 2,
   },
 
