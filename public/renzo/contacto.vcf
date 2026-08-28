@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Calcaterra;Renzo;;;
+FN:Renzo Calcaterra
+ORG:Don Valerio Equipamientos
+TITLE:Ventas
+TEL;TYPE=CELL,VOICE:+5493416650190
+EMAIL;TYPE=INTERNET,WORK:logistica@donvalerio.com.ar
+URL:https://donvalerio.com.ar
+X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/donvalerioequipamientos
+item1.URL:https://wa.me/5493416650190
+item1.X-ABLabel:WhatsApp
+END:VCARD

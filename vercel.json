@@ -50,7 +50,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!assets/|.*\\.[a-zA-Z0-9]+$).*)",
+      "source": "/((?!assets/|vcard-assets/|renzo/|matias/|lautaro/|.*\\.[a-zA-Z0-9]+$).*)",
       "destination": "/index.html"
     }
   ]

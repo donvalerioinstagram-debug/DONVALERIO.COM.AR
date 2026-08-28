@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Bracamonti;Lautaro;;;
+FN:Lautaro Bracamonti
+ORG:Don Valerio Equipamientos
+TITLE:Socio Gerente
+TEL;TYPE=CELL,VOICE:+5493412507497
+EMAIL;TYPE=INTERNET,WORK:lbracamonti@donvalerio.com.ar
+EMAIL;TYPE=INTERNET,WORK:donvalerioequip@gmail.com
+URL:https://donvalerio.com.ar
+X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/donvalerioequipamientos
+item1.URL:https://wa.me/5493412507497
+item1.X-ABLabel:WhatsApp
+END:VCARD

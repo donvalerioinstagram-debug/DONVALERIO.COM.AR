@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Genesio;Matias;;;
+FN:Matias Genesio
+ORG:Don Valerio Equipamientos
+TITLE:Socio Gerente
+TEL;TYPE=CELL,VOICE:+5493416901529
+EMAIL;TYPE=INTERNET,WORK:matiasgenesio1@donvalerio.com.ar
+EMAIL;TYPE=INTERNET,WORK:donvalerioequip@gmail.com
+URL:https://donvalerio.com.ar
+X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/donvalerioequipamientos
+item1.URL:https://wa.me/5493416901529
+item1.X-ABLabel:WhatsApp
+END:VCARD
