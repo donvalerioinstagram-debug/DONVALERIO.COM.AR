@@ -63,10 +63,6 @@ body:before{
 .name{font-size:clamp(2rem,6vw,3.6rem);line-height:.98;margin:0;font-weight:800;letter-spacing:-.04em}
 .role{color:var(--orange);font-weight:750;font-size:clamp(1.1rem,3.5vw,1.65rem);margin-top:8px}
 .company{color:var(--muted);margin-top:4px}
-.badge{
-  display:inline-flex; align-items:center; gap:8px; margin-top:14px; padding:8px 12px;
-  border:1px solid rgba(254,100,0,.35); border-radius:999px; color:#ffd4ba; font-size:.82rem
-}
 .grid{display:grid;gap:12px;margin-top:16px}
 .item{
   display:grid; grid-template-columns:48px 1fr auto; gap:14px; align-items:center;
@@ -121,14 +117,6 @@ body:before{
 .sharebox p{margin:0;color:var(--muted);font-size:.88rem}
 .qr{background:#fff;border-radius:14px;padding:8px;width:120px}
 .qr img{display:block;width:100%;height:auto}
-.trust{
-  margin-top:18px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.08);
-  border-bottom:1px solid rgba(255,255,255,.08);padding:14px 0
-}
-.trust div{padding:4px 10px;border-right:1px solid rgba(255,255,255,.08)}
-.trust div:last-child{border-right:0}
-.trust b{font-size:.72rem;text-transform:uppercase;color:#f2f3f4}
-.trust small{display:block;color:var(--muted);font-size:.66rem;margin-top:3px}
 footer{text-align:center;color:#777f84;font-size:.72rem;padding:18px 0 0}
 footer b{color:var(--orange)}
 .toast{
@@ -143,8 +131,6 @@ footer b{color:var(--orange)}
   .idrow{grid-template-columns:82px 1fr;gap:15px}
   .avatar{width:82px;height:82px}
   .actions{grid-template-columns:repeat(3,1fr)}
-  .trust{grid-template-columns:repeat(2,1fr);gap:8px}
-  .trust div{border-right:0}
   .sharebox{grid-template-columns:1fr 96px}
   .qr{width:96px}
 }
