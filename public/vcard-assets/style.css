@@ -76,9 +76,9 @@ body:before{
   color:var(--orange);border:1px solid rgba(254,100,0,.25);background:#0d1215;
 }
 .ico svg,.action svg{width:25px;height:25px;stroke:currentColor;fill:none;stroke-width:1.9}
-.label{font-size:.72rem;color:var(--orange);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-.label::after{content:":";margin-right:.35em}
-.value{font-size:clamp(.95rem,3.3vw,1.16rem);margin-top:2px;overflow-wrap:anywhere}
+.label{display:block;font-size:.72rem;color:var(--orange);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.label::after{content:":"}
+.value{display:block;font-size:clamp(.95rem,3.3vw,1.16rem);margin-top:3px;overflow-wrap:break-word;word-break:break-word}
 .chev{font-size:1.65rem;color:var(--orange)}
 .section-title{
   display:flex;align-items:center;gap:12px;color:#d6dade;letter-spacing:.14em;text-transform:uppercase;
