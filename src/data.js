@@ -157,15 +157,15 @@ const PRODUCTS = [
   {
     sku: 'EB-4A', slug: 'horno-convector-eb-4a', category: 'hornos', img: 'EB-4A',
     name: 'Horno Convector EB-4A', cap: '4 band. 440 × 320 mm',
-    desc: 'Horno convector eléctrico de 4 bandejas de gastronomía. Circulación de aire forzada para cocción pareja. Ideal para panaderías, rotiserías y cafeterías.',
-    specs: [['Bandejas','4 de 440 × 320 mm'],['Tipo','Convector'],['Potencia','2,6 KW'],['Alimentación','220V / 50Hz monofásico'],['Dimensiones','595 × 530 × 570 mm'],['Peso','25 kg']],
+    desc: 'Horno Convector EB-4A: combina potencia, precisión y practicidad en un formato compacto, ideal para producciones pequeñas y medianas. Su sistema de convección garantiza una cocción uniforme, mientras que la inyección de vapor y el control independiente del calentamiento superior permiten obtener excelentes resultados en todo tipo de preparaciones. Solución confiable y versátil para panaderías, confiterías, gastronomía y emprendimientos.',
+    specs: [['Capacidad / Bandejas','4 de 440 × 320 mm (incluidas)'],['Tipo de horno','Convector (circulación de aire caliente)'],['Función spray','Sí, inyección de vapor'],['Potencia','2,6 KW'],['Alimentación','220V / 50Hz monofásico'],['Medidas exteriores','595 × 530 × 570 mm'],['Medidas interiores','440 × 320 × 350 mm'],['Peso','25 kg'],['Temperatura','50 a 300 °C'],['Temporizador','0 a 120 minutos']],
     stock: 6,
   },
   {
     sku: 'EB-8A', slug: 'horno-convector-eb-8a', category: 'hornos', img: 'EB-8A',
-    name: 'Horno Convector EB-8A', cap: '4 band. 600 × 400 mm',
-    desc: 'Horno convector eléctrico con capacidad para 4 bandejas de 600 × 400 mm. Solución práctica y eficiente para panaderías, pastelerías y emprendimientos gastronómicos. Frente vidriado, controles simples e ideal para producción diaria.',
-    specs: [['Bandejas','4 de 600 × 400 mm'],['Potencia','6,4 KW'],['Alimentación','220V / 50Hz monofásico'],['Dimensiones','830 × 770 × 570 mm'],['Peso','40 kg']],
+    name: 'Horno Convector EB-8A', cap: '5 band. 600 × 400 mm',
+    desc: 'Horno convector EB-8A: solución práctica, versátil y eficiente para panaderías, pastelerías, gastronomía y emprendimientos. Su sistema de convección con circulación de aire caliente brinda una cocción uniforme, mientras que la función spray y el calentamiento superior independiente aportan mayor control en cada preparación. Su capacidad para 5 bandejas de 600 × 400 mm, junto con su rango de 50 a 300 °C y temporizador de hasta 120 minutos, lo convierten en una excelente opción para producciones diarias.',
+    specs: [['Capacidad / Bandejas','5 de 600 × 400 mm'],['Tipo de horno','Convector (circulación de aire caliente)'],['Función spray','Sí, inyección de vapor'],['Potencia','3 + 5 kW'],['Alimentación','220V / 50Hz monofásico'],['Medidas exteriores','835 × 775 × 575 mm'],['Medidas interiores','680 × 540 × 482 mm'],['Peso','40 kg'],['Temperatura','50 a 300 °C'],['Temporizador','0 a 120 minutos']],
     stock: 4,
   },
   {
