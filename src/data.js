@@ -28,28 +28,28 @@ const PRODUCTS = [
     sku: 'B15-V', slug: 'batidora-planetaria-15-lt-b15-v', category: 'batidoras', img: 'B15-V',
     name: 'Batidora Planetaria 15 Lt', cap: '15 lt · 1,5 kg',
     desc: 'Batidora planetaria de 15 litros con 3 velocidades fijas. Eje robusto y recipiente de acero inoxidable. La más elegida para pastelerías y cafeterías en crecimiento.',
-    specs: [['Capacidad tacho','15 litros'],['Cap. amasado','1,5 kg'],['Velocidades','3 velocidades'],['Potencia','1 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','52 × 63 × 58 cm'],['Peso','50 kg']],
+    specs: [['Capacidad tacho','15 litros'],['Cap. amasado','1,5 kg'],['Velocidades','3: 65 / 102 / 296 RPM'],['Potencia','1 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','52 × 63 × 58 cm'],['Peso','50 kg']],
     stock: 4,
   },
   {
     sku: 'B20-V', slug: 'batidora-planetaria-20-lt-b20-v', category: 'batidoras', img: 'B20-V',
     name: 'Batidora Planetaria 20 Lt', cap: '20 lt · 3 kg',
     desc: 'Batidora planetaria robusta de 20 litros y 3 velocidades. La opción más vendida para pastelerías medianas con producción diaria sostenida.',
-    specs: [['Capacidad tacho','20 litros'],['Cap. amasado','3 kg'],['Velocidades','3 velocidades'],['Potencia','1,5 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','55 × 68 × 65 cm'],['Peso','60 kg']],
+    specs: [['Capacidad tacho','20 litros'],['Cap. amasado','3 kg'],['Velocidades','3: 90 / 160 / 300 RPM'],['Potencia','1,5 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','55 × 68 × 65 cm'],['Peso','60 kg']],
     stock: 7,
   },
   {
     sku: 'B30-V', slug: 'batidora-planetaria-30-lt-b30-v', category: 'batidoras', img: 'B20-V',
     name: 'Batidora Planetaria 30 Lt', cap: '30 lt · 4 kg',
     desc: 'Batidora planetaria de 30 litros con 3 velocidades. Motor de 2 HP disponible en versión monofásica o trifásica. Para panaderías y pastelerías de mayor producción.',
-    specs: [['Capacidad tacho','30 litros'],['Cap. amasado','4 kg'],['Velocidades','3 velocidades'],['Potencia','2 HP'],['Alimentación','380V trifásica o 220V monofásica'],['Dimensiones','60 × 70 × 68 cm'],['Peso','68 kg']],
+    specs: [['Capacidad tacho','30 litros'],['Cap. amasado','4 kg'],['Velocidades','3: 110 / 200 / 420 RPM'],['Potencia','2 HP'],['Alimentación','380V trifásica o 220V monofásica'],['Dimensiones','60 × 70 × 68 cm'],['Peso','68 kg']],
     stock: 3,
   },
   {
     sku: 'B40-V', slug: 'batidora-planetaria-40-lt-b40-v', category: 'batidoras', img: 'B20-V',
-    name: 'Batidora Planetaria 40 Lt', cap: '40 lt · 4 kg',
-    desc: 'Batidora planetaria profesional de alta producción. 40 litros y motor de 2 HP trifásico para masas pesadas y trabajo continuo en panaderías industriales.',
-    specs: [['Capacidad tacho','40 litros'],['Cap. amasado','4 kg'],['Velocidades','3 velocidades'],['Potencia','2 HP'],['Alimentación','380V trifásica'],['Dimensiones','68 × 66 × 120 cm'],['Peso','110 kg']],
+    name: 'Batidora Planetaria 40 Lt', cap: '40 lt · 6 kg',
+    desc: 'Batidora planetaria profesional de alta producción. 40 litros y motor de 3 HP trifásico para masas pesadas y trabajo continuo en panaderías industriales.',
+    specs: [['Capacidad tacho','40 litros'],['Cap. amasado','6 kg'],['Velocidades','3 velocidades'],['Potencia','3 HP'],['Alimentación','380V trifásica'],['Dimensiones','65 × 73 × 106 cm'],['Peso','180 kg']],
     stock: 2,
   },
   {
@@ -79,42 +79,42 @@ const PRODUCTS = [
     sku: 'BHS-20-A', slug: 'amasadora-rapida-8-kg-bhs-20-a', category: 'amasadoras', img: 'BHS-20-A',
     name: 'Amasadora Rápida 8 kg', cap: '8 kg harina',
     desc: 'Amasadora rápida a espiral de 8 kg. 2 velocidades con timer. Panel electromecánico robusto para producción diaria en panaderías medianas.',
-    specs: [['Harina máx.','8 kg'],['Velocidades','2 velocidades con timer'],['Potencia','1,5 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','53 × 55 × 90 cm'],['Peso','42 kg']],
+    specs: [['Harina máx.','8 kg'],['Velocidades','2 velocidades, reversa y 2 temporizadores'],['Potencia','1,5 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','53 × 55 × 90 cm'],['Peso','42 kg']],
     stock: 9,
   },
   {
     sku: 'BHS-20-B', slug: 'amasadora-rapida-8-kg-digital-bhs-20-b', category: 'amasadoras', img: 'BHS-20-B',
     name: 'Amasadora Rápida 8 kg Digital', cap: '8 kg harina',
     desc: 'Amasadora rápida a espiral con 2 velocidades, timer y tablero digital. Ideal para panaderías que buscan mayor control sobre tiempos de amasado.',
-    specs: [['Harina máx.','8 kg'],['Velocidades','2 velocidades con timer'],['Control','Tablero digital'],['Potencia','1,5 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','53 × 55 × 90 cm'],['Peso','42 kg']],
+    specs: [['Harina máx.','8 kg'],['Velocidades','2 velocidades, reversa y temporizador digital'],['Control','Tablero digital'],['Potencia','1,5 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','53 × 55 × 90 cm'],['Peso','42 kg']],
     stock: 6,
   },
   {
     sku: 'BHS-30-A', slug: 'amasadora-rapida-12-kg-bhs-30-a', category: 'amasadoras', img: 'BHS-20-A',
     name: 'Amasadora Rápida 12 kg', cap: '12 kg harina',
     desc: 'Amasadora rápida a espiral de 12 kg. Panel electromecánico con 2 velocidades y 2 timers. El caballo de batalla de las panaderías en crecimiento.',
-    specs: [['Harina máx.','12 kg'],['Velocidades','2 velocidades con timer'],['Potencia','2 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','56 × 58 × 93 cm'],['Peso','50 kg']],
+    specs: [['Harina máx.','12 kg'],['Velocidades','2 velocidades, reversa y 2 temporizadores'],['Potencia','2 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','56 × 58 × 93 cm'],['Peso','50 kg']],
     stock: 4,
   },
   {
     sku: 'BHS-30-B', slug: 'amasadora-rapida-12-kg-digital-bhs-30-b', category: 'amasadoras', img: 'BHS-20-B',
     name: 'Amasadora Rápida 12 kg Digital', cap: '12 kg harina',
     desc: 'Amasadora rápida a espiral de 12 kg con tablero digital. 2 velocidades y timer programable para masas de alta hidratación. La más solicitada de la línea.',
-    specs: [['Harina máx.','12 kg'],['Velocidades','2 velocidades con timer'],['Control','Tablero digital'],['Potencia','2 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','56 × 58 × 93 cm'],['Peso','50 kg']],
+    specs: [['Harina máx.','12 kg'],['Velocidades','2 velocidades, reversa y temporizador digital'],['Control','Tablero digital'],['Potencia','2 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','56 × 58 × 93 cm'],['Peso','50 kg']],
     stock: 3,
   },
   {
     sku: 'BHS-40-A', slug: 'amasadora-rapida-16-kg-bhs-40-a', category: 'amasadoras', img: 'BHS-20-A',
     name: 'Amasadora Rápida 16 kg', cap: '16 kg harina',
     desc: 'Amasadora rápida a espiral de 16 kg. 2 velocidades y 2 timers. Panel electromecánico robusto para producción intensiva diaria.',
-    specs: [['Harina máx.','16 kg'],['Velocidades','2 velocidades con timer'],['Potencia','3 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','62 × 68 × 98 cm'],['Peso','115 kg']],
+    specs: [['Harina máx.','16 kg'],['Velocidades','2 velocidades, reversa y 2 temporizadores'],['Potencia','2 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','62 × 68 × 98 cm'],['Peso','52 kg']],
     stock: 5,
   },
   {
     sku: 'BHS-40-B', slug: 'amasadora-rapida-16-kg-digital-bhs-40-b', category: 'amasadoras', img: 'BHS-20-B',
     name: 'Amasadora Rápida 16 kg Digital', cap: '16 kg harina',
     desc: 'Amasadora rápida a espiral de 16 kg con tablero digital. La opción preferida por panaderías modernas que buscan automatizar su proceso.',
-    specs: [['Harina máx.','16 kg'],['Velocidades','2 velocidades con timer'],['Control','Tablero digital'],['Potencia','3 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','62 × 68 × 98 cm'],['Peso','115 kg']],
+    specs: [['Harina máx.','16 kg'],['Velocidades','2 velocidades, reversa y temporizador digital'],['Control','Tablero digital'],['Potencia','2 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','62 × 68 × 98 cm'],['Peso','52 kg']],
     stock: 4,
   },
   {
@@ -135,7 +135,7 @@ const PRODUCTS = [
     sku: 'BHS-60-C', slug: 'amasadora-rapida-25-kg-monofasica-bhs-60-c', category: 'amasadoras', img: 'BHS-60-A',
     name: 'Amasadora Rápida 25 kg Monofásica', cap: '25 kg harina',
     desc: 'Amasadora rápida a espiral de 25 kg en versión monofásica 220V. Para instalaciones que no cuentan con corriente trifásica.',
-    specs: [['Harina máx.','25 kg'],['Velocidades','2 velocidades con reversa'],['Temporizadores','2 programables'],['Potencia','2,0/3,4 HP'],['Alimentación','220V monofásica'],['Dimensiones','88 × 55 × 95 cm'],['Peso','205 kg']],
+    specs: [['Harina máx.','25 kg'],['Velocidades','2 velocidades con reversa'],['Temporizadores','2 programables'],['Potencia','2,0/3,4 HP'],['Alimentación','220V monofásica'],['Dimensiones','90 × 58 × 98 cm'],['Peso','210 kg']],
     stock: 1,
   },
   {
@@ -172,21 +172,21 @@ const PRODUCTS = [
     sku: 'DSL-2B', slug: 'horno-de-piso-refractario-1-piso-dsl-2b', category: 'hornos', img: 'DSL-2B',
     name: 'Horno de Piso Refractario 1 Piso', cap: '1 piso · 2 bandejas',
     desc: 'Horno de piso refractario eléctrico de 1 cámara con 2 bandejas de 60 × 40 cm. Temperatura regulable de 50 a 400°C. Ideal para pizzería y panadería artesanal.',
-    specs: [['Pisos / bandejas','1 piso · 2 bandejas 60×40 cm'],['Temperatura','50–400°C'],['Potencia','6 KW'],['Alimentación','380V trifásica'],['Dimensiones','1220 × 795 × 540 mm'],['Peso','70 kg']],
+    specs: [['Pisos / bandejas','1 piso · 2 bandejas 60×40 cm'],['Temperatura','50–400°C'],['Potencia','6 KW'],['Alimentación','380V trifásica'],['Dimensiones exteriores','1220 × 795 × 540 mm'],['Cámara','860 × 650 × 220 mm'],['Peso','70 kg']],
     stock: 4,
   },
   {
     sku: 'DSL-4B', slug: 'horno-de-piso-refractario-2-pisos-dsl-4b', category: 'hornos', img: 'DSL-4B',
     name: 'Horno de Piso Refractario 2 Pisos', cap: '2 pisos · 4 bandejas',
     desc: 'Horno de piso refractario de 2 cámaras independientes con 4 bandejas. Cada piso se controla por separado. 13 KW de potencia para producción continua.',
-    specs: [['Pisos / bandejas','2 pisos · 4 bandejas 60×40 cm'],['Temperatura','50–400°C'],['Potencia','13 KW'],['Alimentación','380V trifásica'],['Dimensiones','1220 × 795 × 1280 mm'],['Peso','109 kg']],
+    specs: [['Pisos / bandejas','2 pisos · 4 bandejas 60×40 cm'],['Temperatura','50–400°C'],['Potencia','13 KW'],['Alimentación','380V trifásica'],['Dimensiones exteriores','1220 × 795 × 1280 mm'],['Cámara','860 × 650 × 220 mm por piso'],['Peso','109 kg']],
     stock: 2,
   },
   {
     sku: 'DSL-6B', slug: 'horno-de-piso-refractario-3-pisos-dsl-6b', category: 'hornos', img: 'DSL-6B',
     name: 'Horno de Piso Refractario 3 Pisos', cap: '3 pisos · 6 bandejas',
     desc: 'Horno de piso refractario de 3 cámaras independientes. Máxima producción en mínima superficie. Cada cámara con control independiente de temperatura.',
-    specs: [['Pisos / bandejas','3 pisos · 6 bandejas 60×40 cm'],['Temperatura','50–400°C'],['Potencia','19,8 KW'],['Alimentación','380V trifásica'],['Dimensiones','1220 × 795 × 1460 mm'],['Peso','226 kg']],
+    specs: [['Pisos / bandejas','3 pisos · 6 bandejas 60×40 cm'],['Temperatura','50–400°C'],['Potencia','19,8 KW'],['Alimentación','380V trifásica'],['Dimensiones exteriores','1220 × 795 × 1460 mm'],['Cámara','860 × 650 × 220 mm por piso'],['Peso','226 kg']],
     stock: 0, order: true,
   },
   {
@@ -200,7 +200,7 @@ const PRODUCTS = [
     sku: 'HL-R10D', slug: 'horno-rotativo-electrico-10-bandejas-hl-r10d', category: 'hornos', img: 'HL-R10D',
     name: 'Horno Rotativo Eléctrico 10 Bandejas', cap: '10 band. rotativo',
     desc: 'Horno rotativo industrial de 10 bandejas. Doble capacidad para panaderías y fábricas que necesitan máxima producción horaria. Bajo pedido.',
-    specs: [['Capacidad','10 bandejas 40×60 cm'],['Potencia','19 KW'],['Alimentación','380V trifásica'],['Dimensiones','880 × 1270 × 1850 mm'],['Peso','330 kg']],
+    specs: [['Capacidad','10 bandejas 40×60 cm'],['Potencia','19 KW'],['Alimentación','380V trifásica'],['Dimensiones','880 × 1270 × 1950 mm'],['Peso','330 kg']],
     stock: 0, order: true,
   },
 
@@ -216,14 +216,14 @@ const PRODUCTS = [
     sku: 'YH-16', slug: 'camara-de-fermentacion-16-bandejas-yh-16', category: 'camaras', img: 'YH-16',
     name: 'Cámara de Fermentación 16 Bandejas', cap: '16 bandejas',
     desc: 'Cámara de fermentación para 16 bandejas. Control automático de temperatura y humedad para resultados consistentes en producción diaria.',
-    specs: [['Bandejas','16 de 60 × 40 cm'],['Potencia','2,0 KW'],['Alimentación','220V monofásica'],['Humedad','Automática'],['Control','Electromecánico'],['Dimensiones','485 × 695 × 1900 mm']],
+    specs: [['Bandejas','16 de 60 × 40 cm'],['Potencia','2,0 KW'],['Alimentación','220V monofásica'],['Humedad','Carga de agua manual'],['Control','Electromecánico'],['Dimensiones','485 × 695 × 1900 mm']],
     stock: 5,
   },
   {
     sku: 'YH-32', slug: 'camara-de-fermentacion-32-bandejas-yh-32', category: 'camaras', img: 'YH-32',
     name: 'Cámara de Fermentación 32 Bandejas', cap: '32 bandejas',
     desc: 'Cámara de fermentación de alta capacidad con 32 bandejas y humidificación automática. Para panaderías con producción intensiva.',
-    specs: [['Bandejas','32 de 60 × 40 cm'],['Potencia','2,0 KW'],['Alimentación','220V monofásica'],['Humedad','Automática'],['Control','Electromecánico'],['Dimensiones','485 × 980 × 1900 mm']],
+    specs: [['Bandejas','32 de 60 × 40 cm'],['Potencia','2,0 KW'],['Alimentación','220V monofásica'],['Humedad','Carga de agua manual'],['Control','Electromecánico'],['Dimensiones','485 × 980 × 1900 mm']],
     stock: 3,
   },
 
@@ -285,12 +285,12 @@ const PRODUCTS = [
     sku: 'BSA-31', slug: 'rebanadora-de-mesa-bsa-31', category: 'rebanadoras', img: 'BSA-31',
     name: 'Rebanadora de Mesa', cap: '30 rebanadas/corte',
     desc: 'Rebanadora de pan de mesa con cuchillas inoxidables. Hasta 30 rebanadas por corte, espesor de 12 mm, ancho máximo 360 mm. Fabricación robusta para producción diaria.',
-    specs: [['Rebanadas','30 por corte'],['Espesor','12 mm'],['Ancho máx.','360 mm'],['Cuchillas','Acero inoxidable'],['Potencia','0,5 HP'],['Alimentación','220V / 50Hz'],['Dimensiones','680 × 750 × 750 mm'],['Peso','55 kg']],
+    specs: [['Carga','Superior'],['Rebanadas','30 por corte'],['Espesor','12 mm'],['Ancho máx.','360 mm'],['Cuchillas','Acero inoxidable'],['Potencia','0,5 HP'],['Alimentación','220V / 50Hz'],['Dimensiones','680 × 780 × 780 mm'],['Peso','52 – 55 kg']],
     stock: 6,
   },
   // ── LAMINADORAS ─────────────────────────────────────────────────────────
   {
-    sku: 'DBQ-520B', slug: 'laminadora-vaiven-de-mesa-520-mm-dbq-520b', category: 'laminadoras', img: 'DBQ-520B',
+    sku: 'BDQ-520E', slug: 'laminadora-vaiven-de-mesa-520-mm-bdq-520e', category: 'laminadoras', img: 'BDQ-520E',
     name: 'Laminadora Vaivén de Mesa 520 mm', cap: '520 mm · 5 kg',
     desc: 'Laminadora de vaivén para masa, versión de mesa. Rolo de 520 mm, apertura regulable de 0,5 a 38 mm y micro de seguridad. Para medialunas, facturas y masas laminadas.',
     specs: [['Rolo','520 mm'],['Capacidad','5 kg de masa'],['Apertura','0,5 – 38 mm'],['Seguridad','Micro de seguridad'],['Potencia','0,75 HP'],['Alimentación','220V'],['Dimensiones en uso','940 × 2160 mm'],['Peso','159 kg']],
@@ -300,7 +300,7 @@ const PRODUCTS = [
     sku: 'BDQ-650E', slug: 'laminadora-vaiven-de-pie-650-mm-bdq-650e', category: 'laminadoras', img: 'BDQ-650E',
     name: 'Laminadora Vaivén de Pie 650 mm', cap: '650 mm · 6,5 kg',
     desc: 'Laminadora de pie de mayor porte para producción continua. Rolo de 650 mm, 1 HP. Para panaderías y pastelerías de alto volumen.',
-    specs: [['Rolo','650 mm'],['Capacidad','6,5 kg de masa'],['Apertura','0,5 – 38 mm'],['Seguridad','Micro de seguridad'],['Potencia','1 HP'],['Alimentación','220V / 50Hz'],['Dimensiones en uso','1050 × 2900 mm'],['Peso','235 kg']],
+    specs: [['Rolo','650 mm'],['Capacidad','6,5 kg de masa'],['Apertura','0,2 – 50 mm'],['Seguridad','Micro de seguridad'],['Potencia','1 HP'],['Alimentación','220V / 50Hz'],['Dimensiones en uso','1050 × 2900 mm'],['Peso','235 kg']],
     stock: 1,
   },
   // ── DIVISORAS ───────────────────────────────────────────────────────────
@@ -308,7 +308,7 @@ const PRODUCTS = [
     sku: 'BDK-30S', slug: 'divisora-boleadora-semi-automatica-bdk-30s', category: 'divisoras', img: 'BDK-30S',
     name: 'Divisora Boleadora Semi-Automática', cap: '30 piezas/ciclo',
     desc: 'Divisora boleadora semiautomática. Divide y bolea 30 piezas por ciclo de 40 a 120 g. Cuchillas inoxidables y boleado motorizado.',
-    specs: [['Piezas por ciclo','30'],['Peso por pieza','40 – 120 g'],['Cuchillas','Acero inoxidable'],['Boleado','Motorizado'],['Potencia','1 HP'],['Alimentación','380V trifásica o 220V monofásica'],['Dimensiones','600 × 770 × 2100 mm'],['Peso','330 kg']],
+    specs: [['Piezas por ciclo','30'],['Peso por pieza','30 – 100 g'],['Cuchillas','Acero inoxidable'],['Boleado','Motorizado'],['Potencia','1 HP'],['Alimentación','380V trifásica o 220V monofásica'],['Dimensiones','740 × 570 × 2100 mm'],['Peso','330 kg']],
     stock: 2,
   },
 ];
@@ -321,7 +321,7 @@ const BRAND = {
   phone: '+54 9 341 665-0190',
 };
 
-const FICHAS = ['DV-MB','DV-R','SB-3HP','SB-5.5HP','SB-5.5HP-DT','B7-A','B15-V','B20-V','B30-V','B40-V','B60-V','BH-130','BHS-10-A','BHS-10-D','BHS-20-A','BHS-20-B','BHS-30-A','BHS-30-B','BHS-40-A','BHS-40-B','BHS-60-A','BHS-60-B','BHS-60-C','BSA-31','BDK-30S','DSL-2B','DSL-4B','DSL-6B','EB-4A','EB-8A','HL-R5D','HL-R10D','DBQ-520B','BDQ-650E','TRINCH-JR','TRINCH-CE','VSD-260D','YH-6','YH-16','YH-32'];
+const FICHAS = ['DV-MB','DV-R','SB-3HP','SB-5.5HP','SB-5.5HP-DT','B7-A','B15-V','B20-V','B30-V','B40-V','B60-V','BH-130','BHS-10-A','BHS-10-D','BHS-20-A','BHS-20-B','BHS-30-A','BHS-30-B','BHS-40-A','BHS-40-B','BHS-60-A','BHS-60-B','BHS-60-C','BSA-31','BDK-30S','DSL-2B','DSL-4B','DSL-6B','EB-4A','EB-8A','HL-R5D','HL-R10D','BDQ-520E','BDQ-650E','TRINCH-JR','TRINCH-CE','VSD-260D','YH-6','YH-16','YH-32'];
 
 
 export { CATEGORIES, PRODUCTS, BRAND, FICHAS };
