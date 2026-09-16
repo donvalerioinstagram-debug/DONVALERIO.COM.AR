@@ -56,7 +56,7 @@ const PRODUCTS = [
     sku: 'B60-V', slug: 'batidora-planetaria-60-lt-b60-v', category: 'batidoras', img: 'B60-V',
     name: 'Batidora Planetaria 60 Lt', cap: '60 lt · 8 kg',
     desc: 'Batidora planetaria industrial con carro extractor de tacho. Motor de 4 HP trifásico para producciones intensivas. La solución definitiva para fábricas de pastelería.',
-    specs: [['Capacidad tacho','60 litros'],['Cap. amasado','8 kg'],['Velocidades','3 velocidades'],['Potencia','4 HP'],['Alimentación','380V trifásica'],['Extractor','Carro para tacho'],['Dimensiones','740 × 570 × 2100 mm'],['Peso','220 kg']],
+    specs: [['Capacidad tacho','60 litros'],['Cap. amasado','8 kg'],['Velocidades','3 velocidades'],['Potencia','4 HP'],['Alimentación','380V trifásica'],['Elevación','Manual del bowl'],['Extractor','Carro para tacho'],['Dimensiones','740 × 570 × 2100 mm'],['Peso','220 kg']],
     stock: 1,
   },
 
@@ -209,21 +209,21 @@ const PRODUCTS = [
     sku: 'YH-6', slug: 'camara-de-fermentacion-6-bandejas-yh-6', category: 'camaras', img: 'YH-6',
     name: 'Cámara de Fermentación 6 Bandejas', cap: '6 bandejas',
     desc: 'Cámara de fermentación controlada con humedad automática. Formato compacto para 6 bandejas de 60 × 40 cm. Ideal para panaderías pequeñas.',
-    specs: [['Bandejas','6 de 60 × 40 cm'],['Potencia','2,0 KW'],['Alimentación','220V monofásica'],['Humedad','Carga de agua manual'],['Control','Electromecánico'],['Dimensiones','485 × 695 × 1030 mm']],
+    specs: [['Bandejas','6 de 60 × 40 cm'],['Potencia','2,0 KW'],['Alimentación','220V monofásica'],['Humedad','Carga de agua automática'],['Control','Electromecánico'],['Dimensiones','485 × 695 × 1030 mm']],
     stock: 7,
   },
   {
     sku: 'YH-16', slug: 'camara-de-fermentacion-16-bandejas-yh-16', category: 'camaras', img: 'YH-16',
     name: 'Cámara de Fermentación 16 Bandejas', cap: '16 bandejas',
     desc: 'Cámara de fermentación para 16 bandejas. Control automático de temperatura y humedad para resultados consistentes en producción diaria.',
-    specs: [['Bandejas','16 de 60 × 40 cm'],['Potencia','2,0 KW'],['Alimentación','220V monofásica'],['Humedad','Carga de agua manual'],['Control','Electromecánico'],['Dimensiones','485 × 695 × 1900 mm']],
+    specs: [['Bandejas','16 de 60 × 40 cm'],['Potencia','2,0 KW'],['Alimentación','220V monofásica'],['Humedad','Carga de agua automática'],['Control','Electromecánico'],['Dimensiones','485 × 695 × 1900 mm']],
     stock: 5,
   },
   {
     sku: 'YH-32', slug: 'camara-de-fermentacion-32-bandejas-yh-32', category: 'camaras', img: 'YH-32',
     name: 'Cámara de Fermentación 32 Bandejas', cap: '32 bandejas',
     desc: 'Cámara de fermentación de alta capacidad con 32 bandejas y humidificación automática. Para panaderías con producción intensiva.',
-    specs: [['Bandejas','32 de 60 × 40 cm'],['Potencia','2,0 KW'],['Alimentación','220V monofásica'],['Humedad','Carga de agua manual'],['Control','Electromecánico'],['Dimensiones','485 × 980 × 1900 mm']],
+    specs: [['Bandejas','32 de 60 × 40 cm'],['Potencia','2,0 KW'],['Alimentación','220V monofásica'],['Humedad','Carga de agua automática'],['Control','Electromecánico'],['Dimensiones','485 × 980 × 1900 mm']],
     stock: 3,
   },
 
@@ -300,15 +300,15 @@ const PRODUCTS = [
     sku: 'BDQ-650E', slug: 'laminadora-vaiven-de-pie-650-mm-bdq-650e', category: 'laminadoras', img: 'BDQ-650E',
     name: 'Laminadora Vaivén de Pie 650 mm', cap: '650 mm · 6,5 kg',
     desc: 'Laminadora de pie de mayor porte para producción continua. Rolo de 650 mm, 1 HP. Para panaderías y pastelerías de alto volumen.',
-    specs: [['Rolo','650 mm'],['Capacidad','6,5 kg de masa'],['Apertura','0,2 – 50 mm'],['Seguridad','Micro de seguridad'],['Potencia','1 HP'],['Alimentación','220V / 50Hz'],['Dimensiones en uso','1050 × 2900 mm'],['Peso','235 kg']],
+    specs: [['Rolo','650 mm'],['Capacidad','6,5 kg de masa'],['Apertura','0,2 – 50 mm'],['Seguridad','Botón de parada de emergencia'],['Protección','Rejilla con micro de seguridad'],['Potencia','1 HP'],['Alimentación','220V / 50Hz'],['Dimensiones en uso','1050 × 2900 mm'],['Peso','235 kg']],
     stock: 1,
   },
   // ── DIVISORAS ───────────────────────────────────────────────────────────
   {
     sku: 'BDK-30S', slug: 'divisora-boleadora-semi-automatica-bdk-30s', category: 'divisoras', img: 'BDK-30S',
     name: 'Divisora Boleadora Semi-Automática', cap: '30 piezas/ciclo',
-    desc: 'Divisora boleadora semiautomática. Divide y bolea 30 piezas por ciclo de 40 a 120 g. Cuchillas inoxidables y boleado motorizado.',
-    specs: [['Piezas por ciclo','30'],['Peso por pieza','30 – 100 g'],['Cuchillas','Acero inoxidable'],['Boleado','Motorizado'],['Potencia','1 HP'],['Alimentación','380V trifásica o 220V monofásica'],['Dimensiones','740 × 570 × 2100 mm'],['Peso','330 kg']],
+    desc: 'Divisora boleadora semiautomática modelo BDK-30S. Divide y bolea 30 piezas por ciclo, en un rango de 30 a 100 g. Cuchillas de acero inoxidable, plataforma oscilante con boleado motorizado y control por tablero electromecánico.',
+    specs: [['Piezas por ciclo','30'],['Peso por pieza','30 – 100 g'],['Cuchillas','Acero inoxidable'],['Sistema','Plataforma oscilante con boleado motorizado'],['Control','Tablero electromecánico'],['Potencia','1 HP'],['Alimentación','220V / 50Hz monofásica'],['Dimensiones','740 × 570 × 2100 mm'],['Peso','330 kg']],
     stock: 2,
   },
 ];
