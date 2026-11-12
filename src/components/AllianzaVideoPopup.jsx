@@ -26,7 +26,7 @@ const markDismissed = (key) => {
  * Al terminar el video muestra "Consultanos" y "Cerrar".
  */
 export default function AllianzaVideoPopup({
-  format = 'horizontal', // 'horizontal' (único video incluido)
+  format = 'auto', // 'vertical' | 'horizontal' | 'auto' (horizontal en compu, vertical en celu)
   srcVertical = '/videos/alianza_vertical.mp4',
   srcHorizontal = '/videos/alianza_horizontal.mp4',
   posterVertical = '/videos/alianza_vertical_poster.jpg',
