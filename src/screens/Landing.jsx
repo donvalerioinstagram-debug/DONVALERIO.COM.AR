@@ -2,6 +2,51 @@ import React from 'react';
 import { CATEGORIES, PRODUCTS, BRAND } from '../data.js';
 import { Icon, Placeholder, HeroCarousel, CategoryCarousel, ProductCard } from '../ui.jsx';
 
+const MAPS_PLACE_ID = 'ChIJLcmqm51TtpURlWyxBRdh_a8';
+const MAPS_DIR = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('Don Valerio Equipamientos, Venezuela 1215 bis, Rosario')}&destination_place_id=${MAPS_PLACE_ID}`;
+const MAPS_VIEW = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Don Valerio Equipamientos, Venezuela 1215 bis, Rosario')}&query_place_id=${MAPS_PLACE_ID}`;
+const MAPS_EMBED = 'https://www.google.com/maps?q=' + encodeURIComponent('Don Valerio Equipamientos, Venezuela 1215 bis, Rosario') + '&ll=-32.914654,-60.7259297&z=16&output=embed';
+const REVIEWS = [
+  'Excelente atención y predisposición de la gente de Don Valerio. Voy a seguir trabajando con ellos, son unos genios.',
+  'Excelente. Muy buena atención y predisposición… la batidora es perfecta, todo tal cual lo especificado.',
+  'Tengo el horno y la amasadora. Excelente atención del equipo de Don Valerio.',
+  'Tengo 3 amasadoras: de 12 kg, de 25 kg y de 50 kg. Son de excelente calidad. La atención de todo el equipo de Don Valerio es muy buena. 100% recomendable.',
+  'Excelente atención y entrega en tiempo y forma. Muy recomendable.',
+];
+
+function UbicacionYResenas() {
+  return (
+    <div className="dv-loc">
+      <div className="dv-loc-map">
+        <iframe
+          title="Ubicación de Don Valerio Equipamientos en Google Maps"
+          src={MAPS_EMBED}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+        />
+      </div>
+      <div className="dv-loc-side">
+        <div className="dv-loc-rating">
+          <span className="dv-loc-score">5,0</span>
+          <span className="dv-loc-stars" aria-label="5 estrellas">★★★★★</span>
+          <span className="dv-loc-count">en Google · 7 reseñas</span>
+        </div>
+        <ul className="dv-loc-reviews">
+          {REVIEWS.map((r, i) => (
+            <li key={i}><span className="dv-loc-q">“{r}”</span><span className="dv-loc-by">Cliente · Reseña en Google</span></li>
+          ))}
+        </ul>
+        <div className="dv-loc-btns">
+          <a className="dv-loc-btn dv-loc-btn--main" href={MAPS_DIR} target="_blank" rel="noopener noreferrer">Cómo llegar →</a>
+          <a className="dv-loc-btn" href={MAPS_VIEW} target="_blank" rel="noopener noreferrer">Ver reseñas en Google</a>
+        </div>
+        <div className="dv-loc-addr">{BRAND.address}</div>
+      </div>
+    </div>
+  );
+}
+
 function Landing({ go, addToCart }) {
   return (
     <>
@@ -161,6 +206,7 @@ function Landing({ go, addToCart }) {
               <div className="arrow">→</div>
             </div>
           </div>
+          <UbicacionYResenas />
         </div>
       </section>
     </>
