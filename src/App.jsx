@@ -104,7 +104,7 @@ export default function App() {
 
       <Analytics />
 
-      <AllianzaVideoPopup ctaHref="https://wa.me/5493416650190?text=Hola%2C%20vi%20el%20video%20de%20la%20alianza%20con%20Reemaq%20y%20quiero%20consultar" />
+      <AllianzaVideoPopup hideForDays={0} ctaHref="https://wa.me/5493416650190?text=Hola%2C%20vi%20el%20video%20de%20la%20alianza%20con%20Reemaq%20y%20quiero%20consultar" />
 
       <CartDrawer
         open={drawerOpen}
