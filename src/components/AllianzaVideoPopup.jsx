@@ -56,9 +56,18 @@ export default function AllianzaVideoPopup({
 
   useEffect(() => {
     if (!forceShow && isDismissed(storageKey, hideForDays)) return undefined;
-    const id = setTimeout(() => setVisible(true), delayMs);
-    return () => clearTimeout(id);
-  }, [delayMs, forceShow, hideForDays, storageKey]);
+    let dead = false;
+    // Mientras espera el retardo, descarga el video en segundo plano para que arranque al instante
+    const warm = fetch(src, { cache: 'force-cache' }).then((r) => r.blob()).catch(() => {});
+    const wait = new Promise((r) => setTimeout(r, delayMs));
+    const limit = new Promise((r) => setTimeout(r, delayMs + 6000));
+    Promise.race([Promise.all([warm, wait]), limit]).then(() => {
+      if (!dead) setVisible(true);
+    });
+    return () => {
+      dead = true;
+    };
+  }, [src, delayMs, forceShow, hideForDays, storageKey]);
 
   const close = useCallback(() => {
     markDismissed(storageKey);
