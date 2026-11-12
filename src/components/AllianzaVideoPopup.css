@@ -1,0 +1,89 @@
+/* Ventana flotante "Nueva alianza Don Valerio x Reemaq" — no invasiva:
+   sin fondo oscuro, sin bloquear el scroll, solo ocupa su propio recuadro. */
+.dv-alianza {
+  position: fixed;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 9990;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  font-family: 'Barlow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  box-shadow: 0 12px 32px rgba(48, 66, 79, 0.28), 0 2px 8px rgba(48, 66, 79, 0.18);
+  animation: dv-alianza-in 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.dv-alianza--right { right: max(16px, env(safe-area-inset-right)); }
+.dv-alianza--left { left: max(16px, env(safe-area-inset-left)); }
+.dv-alianza--vertical { width: min(46vw, 210px); aspect-ratio: 9 / 16; }
+.dv-alianza--horizontal { width: min(calc(100vw - 32px), 360px); aspect-ratio: 16 / 9; }
+
+.dv-alianza__video { width: 100%; height: 100%; object-fit: cover; display: block; background: #fff; }
+
+.dv-alianza__btn {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(48, 66, 79, 0.88);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.dv-alianza__btn:hover { background: #fe6400; transform: scale(1.06); }
+.dv-alianza__btn:focus-visible { outline: 3px solid #fe6400; outline-offset: 2px; }
+.dv-alianza__btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.dv-alianza__close { top: 8px; right: 8px; }
+.dv-alianza__sound { bottom: 8px; left: 8px; }
+
+/* Cartel final (cuando termina el video) y botón de play (si el navegador bloquea el autoplay) */
+.dv-alianza__end,
+.dv-alianza__tap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.96);
+  color: #30424f;
+}
+.dv-alianza__tap { background: rgba(255, 255, 255, 0.55); cursor: pointer; border: 0; width: 100%; }
+.dv-alianza__tap span {
+  display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%;
+  background: #fe6400; color: #fff; box-shadow: 0 6px 16px rgba(254, 100, 0, 0.4);
+}
+.dv-alianza__tap svg { width: 22px; height: 22px; fill: #fff; stroke: none; margin-left: 3px; }
+.dv-alianza__title { margin: 0; font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.05; letter-spacing: 0.01em; text-transform: uppercase; }
+.dv-alianza__title b { color: #fe6400; font-weight: 700; }
+.dv-alianza__cta,
+.dv-alianza__dismiss {
+  display: inline-block; min-width: 130px; padding: 9px 16px; border-radius: 999px;
+  font: 600 14px/1.1 'Barlow', system-ui, sans-serif; text-decoration: none; cursor: pointer;
+}
+.dv-alianza__cta { background: #fe6400; color: #fff; border: 2px solid #fe6400; }
+.dv-alianza__cta:hover { background: #e25a00; border-color: #e25a00; }
+.dv-alianza__dismiss { background: transparent; color: #30424f; border: 2px solid #30424f; }
+.dv-alianza__dismiss:hover { background: #30424f; color: #fff; }
+.dv-alianza__again { background: none; border: 0; padding: 4px; color: #798373; font: 500 13px 'Barlow', sans-serif; text-decoration: underline; cursor: pointer; }
+.dv-alianza__again:hover { color: #30424f; }
+.dv-alianza--vertical .dv-alianza__title { font-size: 19px; }
+.dv-alianza--vertical .dv-alianza__cta,
+.dv-alianza--vertical .dv-alianza__dismiss { min-width: 0; width: 100%; padding: 8px 10px; font-size: 13px; }
+.dv-alianza--horizontal .dv-alianza__end { flex-direction: row; flex-wrap: wrap; align-content: center; gap: 8px 10px; }
+.dv-alianza--horizontal .dv-alianza__title { flex-basis: 100%; }
+.dv-alianza--horizontal .dv-alianza__again { flex-basis: 100%; }
+
+@keyframes dv-alianza-in {
+  from { opacity: 0; transform: translateY(18px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dv-alianza { animation: none; }
+  .dv-alianza__btn { transition: none; }
+}
