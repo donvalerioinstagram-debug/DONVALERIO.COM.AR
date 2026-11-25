@@ -104,6 +104,7 @@ function Landing({ go, addToCart }) {
             {CATEGORIES.map(c => (
               <div key={c.id} className={`cat-cell${c.featured ? ' cat-featured' : ''}`} onClick={() => go('catalog', { category: c.id })}>
                 <div className="num">{c.n} / {String(CATEGORIES.length).padStart(2,'0')}{c.featured && <span className="feat-tag">Representante oficial</span>}</div>
+                {c.featured && <img className="feat-logo" src="/assets/reemaq-logo.svg" alt="Reemaq" />}
                 <div>
                   <h3>{c.label}</h3>
                   <div className="count">{c.desc}</div>
