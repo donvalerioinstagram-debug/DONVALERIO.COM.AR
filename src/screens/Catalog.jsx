@@ -48,10 +48,21 @@ function Catalog({ go, addToCart, category }) {
     <div className="container">
       <Breadcrumb items={[{label:'Inicio', to:'landing'}, {label: 'Catálogo'}]} go={go} />
       <div style={{marginBottom: 8}}>
-        <h1 style={{fontSize: 44, marginBottom: 8}}>Catálogo completo</h1>
-        <p style={{color: 'var(--ink-2)', fontSize: 15, marginBottom: 0}}>
-          {PRODUCTS.length} modelos · Equipamiento gastronómico profesional · Stock en Rosario.
-        </p>
+        {cat === 'reemaq' ? (
+          <>
+            <h1 style={{marginBottom: 8}}><img src="/assets/reemaq-logo.svg" alt="Reemaq" style={{height: 64, width: 'auto', display: 'block', marginLeft: -16}} /></h1>
+            <p style={{color: 'var(--ink-2)', fontSize: 15, marginBottom: 0}}>
+              Representante oficial · Hornos, modeladoras y boleadora · Stock en Rosario.
+            </p>
+          </>
+        ) : (
+          <>
+            <h1 style={{fontSize: 44, marginBottom: 8}}>Catálogo completo</h1>
+            <p style={{color: 'var(--ink-2)', fontSize: 15, marginBottom: 0}}>
+              {PRODUCTS.length} modelos · Equipamiento gastronómico profesional · Stock en Rosario.
+            </p>
+          </>
+        )}
       </div>
 
       {CAT_INTRO[cat] && (
@@ -69,7 +80,7 @@ function Catalog({ go, addToCart, category }) {
             </div>
             {CATEGORIES.map(c => (
               <div key={c.id} className={`filter-item ${cat === c.id ? 'active' : ''}${c.featured ? ' featured' : ''}`} onClick={() => pickCat(c.id)}>
-                <span>{c.label}</span>
+                <span>{c.featured ? <img src="/assets/reemaq-logo.svg" alt={c.label} style={{height: 22, width: 'auto', display: 'block', marginLeft: -6}} /> : c.label}</span>
                 <span className="c">{PRODUCTS.filter(p => p.category === c.id).length}</span>
               </div>
             ))}
