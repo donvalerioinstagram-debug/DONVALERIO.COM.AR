@@ -96,14 +96,14 @@ function Landing({ go, addToCart }) {
           <div className="section-head">
             <div>
               <div className="eyebrow">01 — Líneas de producto</div>
-              <h2>Nueve líneas, todo el oficio cubierto.</h2>
+              <h2>Diez líneas, todo el oficio cubierto.</h2>
             </div>
             <button className="btn btn-ghost" onClick={() => go('catalog')}>Ver todo <Icon name="arrow" size={14}/></button>
           </div>
           <div className="cat-grid info-grid">
             {CATEGORIES.map(c => (
-              <div key={c.id} className="cat-cell" onClick={() => go('catalog', { category: c.id })}>
-                <div className="num">{c.n} / {String(CATEGORIES.length).padStart(2,'0')}</div>
+              <div key={c.id} className={`cat-cell${c.featured ? ' cat-featured' : ''}`} onClick={() => go('catalog', { category: c.id })}>
+                <div className="num">{c.n} / {String(CATEGORIES.length).padStart(2,'0')}{c.featured && <span className="feat-tag">Representante oficial</span>}</div>
                 <div>
                   <h3>{c.label}</h3>
                   <div className="count">{c.desc}</div>

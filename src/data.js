@@ -12,7 +12,7 @@ const CATEGORIES = [
   { id: 'rebanadoras', slug: 'rebanadoras',  n: '07', label: 'Rebanadoras',             desc: 'De mesa' },
   { id: 'laminadoras', slug: 'laminadoras',  n: '08', label: 'Laminadoras',             desc: 'De mesa y de pie' },
   { id: 'divisoras', slug: 'divisoras',    n: '09', label: 'Divisoras',               desc: 'Boleadoras semi-automáticas' },
-  { id: 'reemaq', slug: 'reemaq', n: '10', label: 'Reemaq', desc: 'Representante oficial: hornos, modeladoras y boleadora' },
+  { id: 'reemaq', slug: 'reemaq', n: '10', label: 'Reemaq', featured: true, desc: 'Representante oficial: hornos, modeladoras y boleadora' },
 ];
 
 const PRODUCTS = [

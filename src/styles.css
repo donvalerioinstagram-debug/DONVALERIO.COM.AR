@@ -2016,3 +2016,9 @@ img, svg, video { max-width: 100%; height: auto; }
   .dv-loc { grid-template-columns: 1fr; }
   .dv-loc-map, .dv-loc-map iframe { min-height: 300px; }
 }
+
+/* Categoría destacada (Reemaq) */
+.cat-cell.cat-featured { border-color: var(--accent); background: var(--accent-soft); }
+.cat-cell.cat-featured h3 { color: var(--accent); }
+.feat-tag { margin-left: 10px; padding: 2px 8px; background: var(--accent); color: var(--accent-ink); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; border-radius: 2px; }
+.filter-item.featured span:first-child { color: var(--accent); font-weight: 600; }

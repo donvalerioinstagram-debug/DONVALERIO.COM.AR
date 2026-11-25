@@ -68,7 +68,7 @@ function Catalog({ go, addToCart, category }) {
               <span>Todas</span><span className="c">{PRODUCTS.length}</span>
             </div>
             {CATEGORIES.map(c => (
-              <div key={c.id} className={`filter-item ${cat === c.id ? 'active' : ''}`} onClick={() => pickCat(c.id)}>
+              <div key={c.id} className={`filter-item ${cat === c.id ? 'active' : ''}${c.featured ? ' featured' : ''}`} onClick={() => pickCat(c.id)}>
                 <span>{c.label}</span>
                 <span className="c">{PRODUCTS.filter(p => p.category === c.id).length}</span>
               </div>
