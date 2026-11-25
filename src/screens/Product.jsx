@@ -32,9 +32,16 @@ function Product({ go, addToCart, sku }) {
         </div>
 
         <div className="pd-info">
-          <div style={{fontSize: 12, color: 'var(--sage)', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600, marginBottom: 10}}>
-            {catLabel}
-          </div>
+          {p.category === 'reemaq' ? (
+            <div style={{display: 'flex', alignItems: 'center', gap: 12, marginBottom: 10}}>
+              <img src="/assets/reemaq-logo.svg" alt="Reemaq" style={{height: 52, width: 'auto', display: 'block', marginLeft: -12}} />
+              <span className="feat-tag" style={{marginLeft: 0}}>Representante oficial</span>
+            </div>
+          ) : (
+            <div style={{fontSize: 12, color: 'var(--sage)', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600, marginBottom: 10}}>
+              {catLabel}
+            </div>
+          )}
           <h1>{p.name}</h1>
           <div className="sku-row">
             <span>Modelo · {p.sku}</span>
