@@ -50,7 +50,7 @@ function Catalog({ go, addToCart, category }) {
       <div style={{marginBottom: 8}}>
         {cat === 'reemaq' ? (
           <>
-            <h1 style={{marginBottom: 8}}><img src="/assets/reemaq-logo.svg" alt="Reemaq" style={{height: 64, width: 'auto', display: 'block', marginLeft: -16}} /></h1>
+            <h1 style={{marginBottom: 8}}><img src="/assets/reemaq-logo.svg" alt="Reemaq" style={{height: 96, width: 'auto', display: 'block', marginLeft: -24}} /></h1>
             <p style={{color: 'var(--ink-2)', fontSize: 15, marginBottom: 0}}>
               Representante oficial · Hornos, modeladoras y boleadora · Stock en Rosario.
             </p>
@@ -80,7 +80,7 @@ function Catalog({ go, addToCart, category }) {
             </div>
             {CATEGORIES.map(c => (
               <div key={c.id} className={`filter-item ${cat === c.id ? 'active' : ''}${c.featured ? ' featured' : ''}`} onClick={() => pickCat(c.id)}>
-                <span>{c.featured ? <img src="/assets/reemaq-logo.svg" alt={c.label} style={{height: 22, width: 'auto', display: 'block', marginLeft: -6}} /> : c.label}</span>
+                <span>{c.featured ? <img src="/assets/reemaq-logo.svg" alt={c.label} style={{height: 32, width: 'auto', display: 'block', marginLeft: -9}} /> : c.label}</span>
                 <span className="c">{PRODUCTS.filter(p => p.category === c.id).length}</span>
               </div>
             ))}

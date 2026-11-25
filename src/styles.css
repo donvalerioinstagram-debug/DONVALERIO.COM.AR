@@ -2024,7 +2024,7 @@ img, svg, video { max-width: 100%; height: auto; }
 .filter-item.featured span:first-child { color: var(--accent); font-weight: 600; }
 
 .cat-cell.cat-featured { position: relative; }
-.feat-logo { position: absolute; top: 26px; right: 24px; height: 28px; width: auto; }
+.feat-logo { position: absolute; top: 14px; right: 12px; height: 44px; width: auto; }
 @media (max-width: 640px) {
   .feat-tag { display: none; }
   .feat-logo { display: none; }
