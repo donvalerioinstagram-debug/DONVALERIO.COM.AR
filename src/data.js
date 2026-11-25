@@ -342,8 +342,8 @@ const PRODUCTS = [
     stock: 1,
   },
   {
-    sku: 'AIRCHEF-08', slug: 'horno-de-conveccion-reemaq-airchef-08', category: 'reemaq', img: 'AIRCHEF-08',
-    name: 'Horno de Convección Reemaq AirChef 08', cap: '8 bandejas 35 × 35 cm',
+    sku: 'AIRCHEF-08', slug: 'horno-convector-reemaq-airchef-08', category: 'reemaq', img: 'AIRCHEF-08',
+    name: 'Horno Convector Reemaq AirChef 08', cap: '8 bandejas 35 × 35 cm',
     desc: 'Horno eléctrico de convección Reemaq de 8 bandejas, con inyección de vapor en la cámara y hasta 20 recetas programables. Controlador digital de temperatura, tiempo y vapor, con control independiente de temperatura superior e inferior. Interior y exterior de acero inoxidable, puerta de vidrio templado doble y aislación de fibra cerámica. Don Valerio es representante oficial de Reemaq.',
     specs: [['Marca','Reemaq'],['Bandejas','8 de 35 × 35 cm, removibles'],['Alimentación','220V monofásica'],['Vapor','Inyección en la cámara con nivel ajustable'],['Recetas','Hasta 20 programables'],['Control','Digital de temperatura, tiempo y vapor; temperatura superior e inferior independientes'],['Interior / exterior','Acero inoxidable liso / cepillado'],['Puerta','Vidrio templado doble'],['Aislación','Manta de fibra cerámica de alta densidad'],['Seguridad','Sensor de puerta, alarma sonora y visual'],['Opcional','Bancada de acero inoxidable']],
     stock: 1,
